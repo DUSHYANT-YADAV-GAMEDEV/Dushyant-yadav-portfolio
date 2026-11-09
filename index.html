@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dushyant Yadav — Game development, 3D modeling, programming, and web portfolio.">
+  <title>Dushyant Yadav | Game Developer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root { --ink:#080808; --muted:#4b5563; --line:#e5e7eb; }
+    * { box-sizing:border-box; scroll-behavior:smooth; }
+    body { margin:0; color:var(--ink); background:#fff; font-family:Inter,sans-serif; }
+    h1,h2,h3 { font-family:'Space Grotesk',sans-serif; }
+    .mono { font-family:'JetBrains Mono',monospace; }
+    .card { border:1.5px solid var(--line); background:#fff; transition:.25s ease; }
+    .card:hover { border-color:#000; box-shadow:4px 4px 0 #000; transform:translateY(-3px); }
+    .btn { display:inline-flex; align-items:center; gap:.55rem; border:1.5px solid #000; border-radius:.8rem; padding:.8rem 1.1rem; font-weight:600; transition:.2s; }
+    .btn-dark { color:#fff; background:#000; }
+    .btn-dark:hover { color:#000; background:#fff; }
+    .btn-light:hover { color:#fff; background:#000; }
+    .tag { display:inline-block; border:1px solid #000; border-radius:999px; padding:.3rem .65rem; font:600 .72rem 'JetBrains Mono',monospace; }
+    .reveal { animation:rise .7s both; }
+    @keyframes rise { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:none; } }
+    .progress { position:fixed; z-index:20; top:0; left:0; height:4px; background:#000; width:0; }
+  </style>
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <header class="sticky top-0 z-10 border-b border-gray-200 bg-white/95 backdrop-blur">
+    <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
+      <a href="#home" class="flex items-center gap-3"><span class="flex h-10 w-10 items-center justify-center rounded-xl border-2 border-black font-bold">DY</span><span><b class="block">Dushyant Yadav</b><small class="mono text-gray-600">Game Dev & 3D Learner</small></span></a>
+      <nav class="hidden gap-5 text-sm font-medium md:flex"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+    </div>
+  </header>
+  <main>
+    <section id="home" class="mx-auto grid max-w-6xl gap-12 px-5 py-20 md:grid-cols-[1.2fr_.8fr] md:items-center">
+      <div class="reveal">
+        <span class="tag">HIGH SCHOOL STUDENT • SELF-MOTIVATED</span>
+        <p class="mono mt-7 text-sm font-semibold uppercase tracking-widest">Hello • 初めまして</p>
+        <h1 class="mt-3 text-5xl font-bold leading-tight md:text-7xl">I am <u>Dushyant Yadav</u></h1>
+        <p class="mt-5 text-xl text-gray-700">An aspiring <strong>Game Developer</strong>, 3D modeling enthusiast, and continuous learner.</p>
+        <p class="mt-5 max-w-2xl leading-7 text-gray-700">I am building a strong foundation in Game Development through daily practice in Python, C, web coding, 3D modeling, and game prototyping. I value curiosity, humility, and steady improvement.</p>
+        <div class="mt-8 flex flex-wrap gap-3"><a class="btn btn-dark" href="#projects">Explore my work →</a><a class="btn btn-light" href="mailto:raodev1603@gmail.com">Contact me</a></div>
+        <p class="mono mt-6 text-xs text-gray-600">raodev1603@gmail.com</p>
+      </div>
+      <aside class="card rounded-3xl p-7 reveal">
+        <span class="tag">student_profile.md</span>
+        <h2 class="mt-6 text-2xl font-bold">About my journey</h2>
+        <p class="mt-4 leading-7 text-gray-700">I love learning how games work from the ground up — from logic and algorithms to responsive interfaces, 3D assets, and playable prototypes.</p>
+        <p class="mt-4 leading-7 text-gray-700">My mindset is <strong>Shoshin</strong> (初心): a beginner’s mind that stays open to feedback and new challenges.</p>
+        <div class="mt-7 border-t border-gray-200 pt-5"><span class="mono text-xs text-gray-600">現在の目標</span><p class="mt-1 font-semibold">Learn consistently. Build thoughtfully. Share openly.</p></div>
+      </aside>
+    </section>
+    <section id="skills" class="mx-auto max-w-6xl px-5 py-16">
+      <div class="max-w-2xl"><span class="tag">FOUNDATIONS & DAILY PRACTICE</span><h2 class="mt-4 text-4xl font-bold">Active learning journey</h2><p class="mt-3 text-gray-700">These are the areas I am actively studying and applying to game development.</p></div>
+      <div class="mt-9 grid gap-5 md:grid-cols-3">
+        <article class="card rounded-2xl p-6"><div class="text-3xl">🐍</div><h3 class="mt-4 text-xl font-bold">Python</h3><p class="mt-2 text-sm leading-6 text-gray-700">Control flow, functions, data structures, algorithms, and game scripting logic.</p><div class="mt-4 flex flex-wrap gap-2"><span class="tag">Logic</span><span class="tag">OOP</span></div></article>
+        <article class="card rounded-2xl p-6"><div class="text-3xl font-bold">C</div><h3 class="mt-4 text-xl font-bold">C Programming</h3><p class="mt-2 text-sm leading-6 text-gray-700">Arrays, structs, static typing, memory fundamentals, and pointer practice.</p><div class="mt-4 flex flex-wrap gap-2"><span class="tag">Memory</span><span class="tag">Systems</span></div></article>
+        <article class="card rounded-2xl p-6"><div class="text-3xl">◈</div><h3 class="mt-4 text-xl font-bold">Web & 3D Art</h3><p class="mt-2 text-sm leading-6 text-gray-700">HTML, CSS, JavaScript, responsive UI, low-poly modeling, UVs, and presentation.</p><div class="mt-4 flex flex-wrap gap-2"><span class="tag">Web</span><span class="tag">3D</span></div></article>
+      </div>
+    </section>
+    <section id="projects" class="bg-gray-50"><div class="mx-auto max-w-6xl px-5 py-16"><span class="tag">HANDS-ON PRACTICE</span><h2 class="mt-4 text-4xl font-bold">Projects & experiments</h2><div class="mt-9 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+      <article class="card rounded-2xl p-6"><span class="mono text-xs">SKETCHFAB • 3D</span><h3 class="mt-4 text-xl font-bold">Candy Shop</h3><p class="mt-2 text-sm leading-6 text-gray-700">A stylized storefront asset exploring clean low-poly geometry, proportions, and game-world readability.</p><a class="mt-5 inline-block font-semibold underline" href="https://sketchfab.com/3d-models/candy-shop-f825f45bfc3f4bb2b6d8150ba5c2c8f8" target="_blank" rel="noopener">View on Sketchfab →</a></article>
+      <article class="card rounded-2xl p-6"><span class="mono text-xs">SKETCHFAB • 3D</span><h3 class="mt-4 text-xl font-bold">Bus Stop</h3><p class="mt-2 text-sm leading-6 text-gray-700">An urban environment prop focused on hard-surface proportions, topology, and lighting readability.</p><a class="mt-5 inline-block font-semibold underline" href="https://sketchfab.com/3d-models/bus-stop-726771c494c849d6a68c87a1fb3a7c66" target="_blank" rel="noopener">View on Sketchfab →</a></article>
+      <article class="card rounded-2xl p-6"><span class="mono text-xs">ITCH.IO • GAME</span><h3 class="mt-4 text-xl font-bold">Flappy Bird</h3><p class="mt-2 text-sm leading-6 text-gray-700">A 2D retro game with jump physics, obstacle loops, audio feedback, and boundary game-over logic.</p><a class="mt-5 inline-block font-semibold underline" href="https://devyadav.itch.io/flappy-bird" target="_blank" rel="noopener">Play on Itch.io →</a></article>
+      <article class="card rounded-2xl p-6"><span class="mono text-xs">ITCH.IO • GODOT</span><h3 class="mt-4 text-xl font-bold">Big Tree Village</h3><p class="mt-2 text-sm leading-6 text-gray-700">A summer game-jam showcase exploring village atmosphere, environmental storytelling, and level layout.</p><a class="mt-5 inline-block font-semibold underline" href="https://devyadav.itch.io/" target="_blank" rel="noopener">Visit Itch.io →</a></article>
+      <article class="card rounded-2xl p-6"><span class="mono text-xs">GITHUB • CODE</span><h3 class="mt-4 text-xl font-bold">Game Logic</h3><p class="mt-2 text-sm leading-6 text-gray-700">Practicing game loops, state management, collision checks, and reusable programming fundamentals.</p><a class="mt-5 inline-block font-semibold underline" href="https://github.com/DUSHYANT-YADAV-GAMEDEV" target="_blank" rel="noopener">Open GitHub →</a></article>
+      <article class="card rounded-2xl p-6"><span class="mono text-xs">ROADMAP • NEXT</span><h3 class="mt-4 text-xl font-bold">Keep building</h3><p class="mt-2 text-sm leading-6 text-gray-700">Next goals: stronger OOP, C++ and C#, game-engine workflows, complete games, and collaborative production.</p><a class="mt-5 inline-block font-semibold underline" href="#contact">Connect →</a></article>
+    </div></div></section>
+    <section id="contact" class="mx-auto max-w-5xl px-5 py-20 text-center"><span class="tag">LET'S CONNECT</span><h2 class="mt-5 text-4xl font-bold">Thank you for visiting</h2><p class="mx-auto mt-4 max-w-2xl text-gray-700">I would be happy to connect with educators, mentors, and fellow creators who enjoy learning and making games.</p><a class="btn btn-dark mt-8" href="mailto:raodev1603@gmail.com">raodev1603@gmail.com</a><div class="mt-8 flex justify-center gap-6 text-sm font-semibold"><a href="https://github.com/DUSHYANT-YADAV-GAMEDEV" target="_blank" rel="noopener">GitHub</a><a href="https://devyadav.itch.io/" target="_blank" rel="noopener">Itch.io</a><a href="https://sketchfab.com/" target="_blank" rel="noopener">Sketchfab</a></div></section>
+  </main>
+  <footer class="border-t border-gray-200 px-5 py-7 text-center text-xs text-gray-600"><span class="mono">© <span id="year"></span> Dushyant Yadav • Built with HTML, CSS & JavaScript</span></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();window.addEventListener('scroll',()=>{const h=document.documentElement;document.getElementById('progress').style.width=(scrollY/(h.scrollHeight-innerHeight)*100)+'%'});</script>
+</body>
+</html>
